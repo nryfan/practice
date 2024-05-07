@@ -1,0 +1,28 @@
+/** element内置黑暗主题 */
+@use 'element-plus/theme-chalk/src/dark/css-vars.scss' as *;
+
+html.dark {
+    //tagsview
+    .tags-view-container{
+        background: black;
+        border-bottom: 1px solid #707276;
+    }
+
+    .el-header{
+        border-bottom-color: #707276;
+    }
+    .tags-view-item{
+        background: #322f2f !important;
+        color: white !important;
+        border-color: #322f2f !important;
+    }
+    .tags-view-item.active{
+        background: rgb(64, 158, 255) !important;
+    }
+
+    //按钮
+    .el-button--primary{
+        background: black !important;
+        color: #fff !important;
+    }
+}

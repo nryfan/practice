@@ -1,0 +1,30 @@
+{
+  "name": "backgroundadmin",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --mode dev",
+    "build": "vite build --mode pro ",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@element-plus/icons-vue": "^2.1.0",
+    "axios": "^1.6.0",
+    "dompurify": "^3.0.6",
+    "element-plus": "^2.4.2",
+    "pinia": "^2.1.7",
+    "process": "^0.11.10",
+    "screenfull": "^6.0.2",
+    "vue": "^3.3.4",
+    "vue-i18n": "^9.9.1",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "less": "^4.2.0",
+    "sass": "^1.70.0",
+    "scss": "^0.2.4",
+    "vite": "^4.4.5"
+  }
+}
