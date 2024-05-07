@@ -136,18 +136,18 @@ const router = createRouter({
 })
 
 //路由守卫
-// const whiteList=['/login']
-// router.beforeEach((to,from,next)=>{
-//   document.title=to.meta.title
-//   if(!whiteList.includes(to.path)){
-//     if(!localStorage.getItem('token')){
-//       router.push('/login')
-//       return
-//     }
-//     next()
-//     return
-//   }
-//   next()
-// })
+const whiteList=['/login']
+router.beforeEach((to,from,next)=>{
+  document.title=to.meta.title
+  if(!whiteList.includes(to.path)){
+    if(!localStorage.getItem('token')){
+      router.push('/login')
+      return
+    }
+    next()
+    return
+  }
+  next()
+})
 
 export default router

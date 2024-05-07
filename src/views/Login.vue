@@ -80,19 +80,25 @@ const submitForm = async(formEl) => {
     }
   })
   console.log(numberValidateForm.username,numberValidateForm.password);
-  const res=await axios.post('login',{
-    username:numberValidateForm.username,
-    password:numberValidateForm.password
-  })
-  console.log(res,res.data.data.token);
-  if(res.data.code=='20000'){
+//   const res=await axios.post('login',{
+//     username:numberValidateForm.username,
+//     password:numberValidateForm.password
+//   })
+//   console.log(res,res.data.data.token);
+let res={
+    code:'20000',
+    data:{
+        token:'jndkfjivo45wovjbdfgb6tyj'
+    }
+}
+  if(res.code=='20000'){
     ElMessage({
         message:'登录成功!',
         type:'success'
     })
-    localStorage.setItem('token',res.data.data.token)
+    localStorage.setItem('token',res.data.token)
     setTimeout(()=>{
-        router.push('/home/table')
+        router.push('/home/index')
     localStorage.setItem("flag",true)
         // router.go(0)
     },1000)
@@ -115,20 +121,26 @@ const resetForm = (formEl) => {
 
 <style lang="less" scoped>
 .login_page{
-    // background-image: url('@/assets/bg.jpg');
-    // background-size: 100% 100%;
-    background:rgb(100, 170, 249);
+     background-image: url('@/assets/bg1.jpg');
+     background-size: 100% 100%;
+    //background:rgb(100, 170, 249);
     height: 100%;
     overflow: hidden;
+    box-sizing: border-box;
 }
 .common-layout{
-    width: 58%;
-    height: 290px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     // position: absolute;
     // margin-left: 50%;
     // margin-top: 50%;
     // transform: translate(-50%,-50%);
-    margin: 172px auto;
+    :deep(.el-container){
+        flex:none;
+    }
 }
 .img{
     width: 70px;
@@ -161,13 +173,14 @@ aside.el-aside{
     align-items: center;
     flex-direction: column;
     /* background: white; */
-    background: url('@/assets/1.jpg');
+    background: url('@/assets/bg.jpg');
     background-size: 100% 100%;
     border-right:1px solid beige;
     border-radius: 5px 0 0 5px;
 }
 .el-main{
-    background:white;
+    /* background:white; */
+    background-color: rgba(255,255,255,0.8);
     border-radius: 0 5px 5px 0;
 }
 form.el-form.el-form--default.el-form--label-right.demo-ruleForm{
