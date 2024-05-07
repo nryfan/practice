@@ -1,7 +1,16 @@
-# Vue 3 + Vite
+# 效果图
+## 1. 登录页面(账号密码随便填，没设限制)
+![image](https://github.com/nryfan/vue3-elementplus-js-/assets/168986376/c5f132fa-321c-4ebc-91bd-b632f58af1ae)
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+## 2.首页
+![image](https://github.com/nryfan/vue3-elementplus-js-/assets/168986376/24d9d70e-8ee7-46d5-9e5d-52881b8be155)
 
-## Recommended IDE Setup
+## 3.其他页面
+![image](https://github.com/nryfan/vue3-elementplus-js-/assets/168986376/27c3b415-1c3b-4f42-aea9-a7e6f43cef63)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+![image](https://github.com/nryfan/vue3-elementplus-js-/assets/168986376/549ec138-2201-4835-a7a0-58080d1a4e57)
+
+![image](https://github.com/nryfan/vue3-elementplus-js-/assets/168986376/1b60aeb5-fd1d-49f2-88d2-89649cfa2e36)
+
+![image](https://github.com/nryfan/vue3-elementplus-js-/assets/168986376/3fa6de4c-0b2c-4b91-84b3-368e6b67ff63)
+
